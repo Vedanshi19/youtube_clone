@@ -9,10 +9,11 @@ import jack from '../../assets/jack.png'
 import user_profile from '../../assets/user_profile.jpg'
 
 
-const PlayVideo = () => {
+const PlayVideo = ({videoId}) => {
   return (
     <div className='play-video'>
-      <video src={video1} controls autoPlay muted></video>
+      {/* <video src={video1} controls autoPlay muted></video> */}
+      <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3>Best Ways to learn coading that helps you to be a web developer</h3>
       <div className="play-video-info">
         <p>1525 views &bull; 2 days ago</p>
@@ -24,6 +25,86 @@ const PlayVideo = () => {
         </div>
       </div>
       <hr />
+      <div className="publisher">
+        <img src={jack} alt="" />
+        <div>
+          <p>Greatstack</p>
+          <span>1M Subscribers</span>
+
+        </div>
+        <button>Subscribe</button>
+      </div>
+      <div className="vid-description">
+        <p>Ideas that make learnimg easy</p>
+        <p>Subscribe GreatStack to learn more on web development</p>
+        <hr />
+        <h4>130 Comments</h4>
+        <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span> </h3>
+              <p>A global computer network providing a variety of information</p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+        </div>
+
+        <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span> </h3>
+              <p>A global computer network providing a variety of information</p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+        </div>
+
+        <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span> </h3>
+              <p>A global computer network providing a variety of information</p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+        </div>
+
+        <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span> </h3>
+              <p>A global computer network providing a variety of information</p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+        </div>
+
+        <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span> </h3>
+              <p>A global computer network providing a variety of information</p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+        </div>
+        
+      </div>
     </div>
   )
 }
